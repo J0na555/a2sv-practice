@@ -1,0 +1,12 @@
+##[pylyzer] failed /home/jonas/Documents/projects/a2sv-contest/cf problems/B_Triple.py 1772892597 288
+.___v_desugar_1: Never
+.Counter: Never
+.t: Int
+
+.n: Int
+.a: global::List!(Never, _: Nat)
+.freq_Count: Never
+.candidates: Never
+
+
+
