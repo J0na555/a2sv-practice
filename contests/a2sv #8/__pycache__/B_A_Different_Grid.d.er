@@ -1,0 +1,42 @@
+##[pylyzer] failed /home/jonas/Documents/projects/a2sv-contest/contests/a2sv #8/B_A_Different_Grid.py 1773643380 771
+.t: Int
+
+.___v_global_354: global::Map(Never)
+.n: Never
+.m: Never
+
+.arr: global::List!(global::List!(Never, _: Nat), 0)
+
+
+
+
+
+
+
+
+
+.copy_arr: global::List!(global::List!(Never, _: Nat), _: Nat)
+.first: Never
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
