@@ -1,0 +1,15 @@
+n , s = map(int, input().split())
+arr = list(map(int, input().split()))
+
+left , curr, mx_len = 0, 0, 0
+
+for right in range(n):
+    curr += arr[right]
+
+    while curr > s:
+        curr -= arr[left]
+        left += 1
+    
+    mx_len = max(mx_len, right - left + 1)
+
+print(mx_len)

@@ -1,0 +1,19 @@
+##[pylyzer] failed /home/jonas/Documents/projects/a2sv-contest/cf problems/
+A_Segment_with_Small_Sum.py 1774210346 185
+.___v_global_673: global::List!(Str, _: Nat)
+.n: Str
+.s: Str
+
+.arr: global::List!(Nat, _: Nat)
+
+.sum: {0}
+
+.idx: Int
+
+
+
+
+
+
+
+
