@@ -1,0 +1,29 @@
+class Solution:
+    def numberOfSubarrays(self, nums, k):
+        def atMost(k):
+            left, count, odd_count = 0, 0, 0
+
+            for right in range(len(nums)):
+                if nums[right] % 2 == 1:
+                    odd_count += 1
+
+                while odd_count > k:
+                    if nums[left] % 2 == 1:
+                        odd_count -= 1
+                        
+                    left += 1
+
+                count += (right - left + 1)
+
+            return count
+
+        return atMost(k) - atMost(k - 1)
+        
+
+# [2,2,2,1,2,2,1,2,2,2] => 2
+# [0,0,0,1,0,0,1,0,0,0] => 16
+
+#  [1,1,2,1,1] => 3
+#  [1,1,0,1,1] => 2
+
+# No. of subarrays with exactly k odd = No. of subarrays with at most k odd - No. of subarrays with at most k-1 odd.
