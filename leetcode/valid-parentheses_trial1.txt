@@ -1,0 +1,19 @@
+class Solution:
+    def isValid(self, s: str) -> bool:
+        all_symbols = {')' : '(', ']' : '[', '}' : '{'}
+
+        stack = []
+
+        for open in s:
+            if open in all_symbols:
+                
+                if stack and stack[-1] == all_symbols[open]:
+                    stack.pop()
+                
+                else:
+                    return False
+            
+            else:
+                stack.append(open)
+        
+        return True if not stack else False
