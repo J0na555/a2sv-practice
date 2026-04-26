@@ -1,0 +1,19 @@
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        def quick_pow(x_val, n_val):
+            if n_val == 0:
+                return 1.0
+            
+            half = quick_pow(x_val, n_val // 2)
+
+            if n_val % 2 == 0:
+                return half * half
+            else:
+                return half * half * x_val
+
+        if n < 0:
+            x = 1 / x
+
+            n = -n
+            
+        return quick_pow(x, n)
