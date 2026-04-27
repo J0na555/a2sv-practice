@@ -1,0 +1,16 @@
+class Solution:
+    def arrangeCoins(self, n: int) -> int:
+        left, right = 1, n
+        
+        while left <= right:
+            mid = left + (right - left) // 2
+            current_coins = mid * (mid + 1) // 2
+            
+            if current_coins == n:
+                return mid
+            elif current_coins > n:
+                right = mid - 1
+            else:
+                left = mid + 1
+        
+        return right
